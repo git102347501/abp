@@ -188,6 +188,11 @@ public class CustomSettingValueProvider : SettingValueProvider
         /* Return the setting value or null
            Use the SettingStore or another data source */
     }
+    
+    public abstract Task<List<SettingValue>> GetAllAsync(SettingDefinition[] settings){
+        /* Return the all setting value
+           Use the SettingStore or another data source */
+    }
 }
 ````
 
